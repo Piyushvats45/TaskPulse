@@ -1,0 +1,1 @@
+# i am builting(In Progress) a distributed job queue system where tasks are pushed to a Redis queue and processed asynchronously by worker services. This will improves system scalability and prevents blocking API responses.
