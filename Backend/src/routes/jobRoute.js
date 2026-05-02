@@ -1,11 +1,12 @@
 const express = require("express");
 const { authMiddleware } = require("../middlewares/authMiddleware");
 const { createJob, getJobStatus } = require("../controllers/jobController");
+const rateLimiter = require("../middlewares/rateLimiter");
 
 const router = express.Router();
 
 /* POST /api/jobs/ */
-router.post("/", authMiddleware, createJob);
+router.post("/", authMiddleware, rateLimiter, createJob);
 
 /* GET /api/jobs/:id */
 router.get("/:id", authMiddleware, getJobStatus);

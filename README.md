@@ -1,1 +1,1 @@
-## i am builting(In Progress) a distributed job queue system where tasks are pushed to a Redis queue and processed asynchronously by worker services. This will improves system scalability and prevents blocking API responses.
+## Built a distributed job queue system using Node.js, Redis (BullMQ), and MongoDB to handle asynchronous tasks with retry mechanisms, rate limiting, and real-time email processing.

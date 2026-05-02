@@ -27,6 +27,7 @@ const createJob = async (req, res) => {
         // 2 Add job to queue
         await jobQueue.add("job-task", {
             jobId: job._id,
+            type,
             data,
         });
 
